@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro</title>
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+
+       
+        <main class="login">
+           
+            <div class="login_container">
+                <h1 class="login_title">Faça seu cadastro</h1>
+                <form class="login_form" method="get" action="success.html" >
+                    
+                   <p> Dados pessoais </p>
+
+                    <input name="nome" class="login_input" type="text" placeholder="Nome Completo *" required>
+                    <span class="login_input-border"></span>
+                    <input class="login_input" text="testando" type="text" maxlength="11" onblur="return verificarCPF(this.value)" placeholder="CPF * (Digite somente os números. Sem pontos (.) e sem traço (-))" required>
+                    <span class="login_input-border"></span>
+                    <input class="login_input" type="text" placeholder="RG" >
+                    <span class="login_input-border"></span>         
+                    <input class="login_input" type="text" placeholder="Sexo" >
+                    <span class="login_input-border"></span>
+
+                    <p> Endereço </p>
+                    <input class="login_input" type="text" placeholder="Logradouro *" required>
+                    <span class="login_input-border"></span>
+                    <input class="login_input" type="text" placeholder="Numero *" required>
+                    <span class="login_input-border"></span>
+                    <input class="login_input" type="text" placeholder="Bairro *" required>
+                    <span class="login_input-border"></span>
+                    <input class="login_input" type="text" placeholder="Cidade *" required>
+                    <span class="login_input-border"></span>
+                    <input class="login_input" type="text" placeholder="Estado *" required>
+                    <span class="login_input-border"></span>
+                    <input class="login_input" type="text" placeholder="CEP *" required>
+                    <span class="login_input-border"></span>
+
+                    <p> Contato </p>
+                    <input class="login_input" type="text" placeholder="Telefone Fixo" >
+                    <span class="login_input-border"></span>
+                    <input class="login_input" type="text" placeholder="Telefone Celular *" required>
+                    <span class="login_input-border"></span>
+                  
+                    <div class="obs__text"><p class="obs">Os campos com asterísco(*) são obrigatórios</p></div>
+                    
+                    <button type="submit" class="login_submit">Finalizar Cadastro</button>
+                    
+                </form>
+                
+            </div>
+
+        </main>
+        <script src="js/main.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

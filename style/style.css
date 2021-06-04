@@ -1,0 +1,115 @@
+:root {
+    --input-linear: linear-gradient(120deg, rgb(107, 2, 128), rgb(2, 13, 173));
+    --button-linear: linear-gradient(120deg,rgb(2, 19, 173),rgb(98, 2, 128), rgb(2, 19, 173));
+    --black: #303030;
+    --white: #ffffff;
+    --gray: #929292;
+    --light-gray: #cfcfcf;
+    --border-height: 2px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+.login {
+    height: 120vh;
+    background: var(--input-linear);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_container {
+
+
+    min-height: 800px;
+    width: 500px;
+    background-color: var(--white);
+    box-sizing: border-box;
+    padding: 28px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+  
+
+.login_title {
+    margin-bottom: 32px;
+    color: var(--black);
+    font-size: x-large;
+}
+
+.login_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login_input {
+    height: 35px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 7px;
+    border: unset;
+    outline: none;
+    
+}
+
+.login_input-border {
+    height: var(--border-height);
+    width: 100%;
+    margin-bottom: 16px;
+    background-color:var(--light-gray);
+    transition: .8s ease-in-out;
+}
+
+.login_input-border::after {
+    content: '';
+  display: block;
+  height: var(--border-height);
+  width: 0;
+  margin-bottom: 16px;
+  background: var(--input-linear);
+  transition: .3s ease-in-out;
+}
+
+.login_input:focus + .login_input-border::after {
+    width: 100%;
+}
+
+.obs {
+    color: rgb(156, 155, 154);
+    font-size: small;
+}
+.login_submit:hover {
+    background-position: right;
+}
+
+.login_submit {
+    height: 48px;
+  width: 200px;
+  padding-left: 8px;
+  outline: none;
+  position: relative;
+  background: var(--button-linear);
+  background-size: 200%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 1px;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: bold;
+  border: unset;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
